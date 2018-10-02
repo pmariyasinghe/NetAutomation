@@ -1,0 +1,7 @@
+[ios]
+
+[brocade]
+
+[eos]
+veos1.lab.ecmwf.int ansible_host=192.168.56.101  ansible_os=eos ansible_user=admin ansible_ssh_pass=admin ansible_port=22 api_port=443
+
