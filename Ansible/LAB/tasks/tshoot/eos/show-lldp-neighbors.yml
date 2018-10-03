@@ -1,0 +1,15 @@
+---
+ - name: Check arp-table file
+   hosts: local
+   tasks:
+   - file: path=/vagrant/NetAutomation/Ansible/LAB/lldp_neighbors.csv state=absent
+   - file: path=/vagrant/NetAutomation/Ansible/LAB/lldp_neighbors.csv state=touch
+
+ - name: Check ARP table on switch
+   hosts: veos-lab
+   tasks:
+   - eos_command:
+       commands: "show lldp neighbors | json"
+     register: result
+   - debug: var=result
+   - set_fact: lldp_neighbors="{{ result.stdout[0].lldpNeighbors | to_yaml }}"

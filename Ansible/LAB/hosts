@@ -2,6 +2,16 @@
 
 [brocade]
 
-[eos]
-veos1.lab.ecmwf.int ansible_host=192.168.56.101  ansible_os=eos ansible_user=admin ansible_ssh_pass=admin ansible_port=22 api_port=443
+[veos-lab]
+veos1.lab.ecmwf.int ansible_host=192.168.56.101  ansible_os=eos ansible_user=admin ansible_ssh_pass=admin transport=https ansible_port=22 api_port=443
+#veos2.lab.ecmwf.int ansible_host=192.168.56.102  ansible_os=eos ansible_user=admin ansible_ssh_pass=admin transport=https ansible_port=22 api_port=443
+#veos3.lab.ecmwf.int ansible_host=192.168.56.103  ansible_os=eos ansible_user=admin ansible_ssh_pass=admin transport=https ansible_port=22 api_port=443
+#veos4.lab.ecmwf.int ansible_host=192.168.56.104  ansible_os=eos ansible_user=admin ansible_ssh_pass=admin transport=https ansible_port=22 api_port=443
+
+[LAB:children]
+veos-lab
+local
+
+[local]
+localhost os=arista hostname=localhost
 

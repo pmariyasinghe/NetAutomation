@@ -1,0 +1,7 @@
+- name: Generate veos Arista configuration
+#  hosts: LAB
+#  connection: local
+
+  roles:
+    - LAB
+
