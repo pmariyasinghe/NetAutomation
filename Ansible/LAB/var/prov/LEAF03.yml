@@ -1,0 +1,29 @@
+---
+- hostname: LEAF03
+  hw_model: vEOS
+  eos: EOS-4.17.8M
+  snmp_location: KVM-NETPEF-H
+  system_mac_address: "525400794D9D"
+  hostname_mgmt_ip: 192.168.100.105/24
+  hostname_mgmt_mac: "08:00:27:dc:c4:2a"
+  domian_id: vEOS-LAB 
+  topology:
+   - neighborDevice: spine01.lab.ecmwf.int
+     port: "Ethernet4"
+     neighborPort: "Ethernet3"
+     validation: none
+   - neighborDevice: spine02.lab.ecmwf.int
+     port: "Ethernet5"
+     neighborPort: "Ethernet3"
+     validation: none
+  spine_con:
+   - port: Eth4
+     desc: "Spine-Link-Spine01 Eth3"
+     ip: 172.16.13.2/30
+   - port: Eth5
+     desc: "Spine-Link-Spine02 Eth3"
+     ip: 172.16.23.2/30
+  loopback:
+   - int: 0
+     desc: leaf01-id
+     ip: 10.0.2.3/32

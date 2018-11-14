@@ -1,0 +1,43 @@
+---
+##### COMMAND: ansible-playbook -i hosts tasks/validate/validate-topology.yml --ask-pass
+- name: Generate Topology config
+  hosts: veos-lab
+  tasks:
+  - template: src=/vagrant/NetAutomation/Ansible/LAB/templates/{{dev_os}}/topology_validation.j2 dest=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/topology/{{hostname}}_topology
+
+- name: Create topology log file for each host  if doesnt exist
+  hosts: veos-lab
+  tasks:
+  - file: path=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/LOGS/{{hostname}}_topology.log state=touch
+
+- name: Topology validation
+  hosts: veos-lab
+  tasks:
+  - script: /usr/bin/python /vagrant/NetAutomation/Ansible/LAB/scripts/lab_show_lldp_neighbours.py {{hostname}} /vagrant/NetAutomation/Ansible/LAB/ConfigRepos/topology/{{hostname}}_topology {{ansible_ssh_pass}}
+
+- name: Create Compliance report file for each host if doesnt exist
+  hosts: veos-lab
+  tasks:
+  - file: path=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/compliance/{{hostname}}_topology_report.yml state=touch
+
+- name: Topology validation - update with validation results
+  hosts: veos-lab
+  tasks:
+  - shell: cat /vagrant/NetAutomation/Ansible/LAB/ConfigRepos/topology/{{hostname}}_topology
+    register: result
+#  - debug: var={{ (result.stdout | from_json | first).validation }}
+#     with_items: "{{ result.stdout | from_json }}"
+  - blockinfile:
+       dest: /vagrant/NetAutomation/Ansible/LAB/ConfigRepos/compliance/{{hostname}}_topology_report.yml 
+       #dest: /vagrant/NetAutomation/Ansible/LAB/host_vars/{{hostname}}.yml
+       #insertafter: "^ topology:"
+       marker: "#{mark} Topology compliance report for {{hostname}}"
+       #marker: ""
+       block: |
+             topology:
+             {% for i in (result.stdout | from_json) %}
+              - NeighborDevice: {{ i.neighborDevice }}
+                Localport: "{{ i.port }}"
+                NeighborPort: "{{ i.neighborPort }}"
+                Validation: "{{ i.validation }}"
+             {% endfor %}

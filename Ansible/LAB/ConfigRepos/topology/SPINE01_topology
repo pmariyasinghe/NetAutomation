@@ -1,0 +1,1 @@
+[{"neighborDevice": "LEAF01.LAB.AUTO.ME", "neighborPort": "Ethernet4", "port": "Ethernet1", "validation": "PASS"}, {"neighborDevice": "LEAF02.LAB.AUTO.ME", "neighborPort": "Ethernet4", "port": "Ethernet2", "validation": "PASS"}, {"neighborDevice": "LEAF03.LAB.AUTO.ME", "neighborPort": "Ethernet4", "port": "Ethernet3", "validation": "PASS"}]

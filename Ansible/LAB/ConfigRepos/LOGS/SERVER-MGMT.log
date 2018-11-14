@@ -1,0 +1,343 @@
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:07:45
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE01/SPINE01.conf>> >>> >>/var/lib/tftpboot/lab/525400DC0BEB/SPINE01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:07:48
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE02/SPINE02.conf>> >>> >>/var/lib/tftpboot/lab/525400A0A41D/SPINE02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:07:50
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF01/LEAF01.conf>> >>> >>/var/lib/tftpboot/lab/525400B209F0/LEAF01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:07:53
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF02/LEAF02.conf>> >>> >>/var/lib/tftpboot/lab/5254001E3118/LEAF02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:07:56
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF03/LEAF03.conf>> >>> >>/var/lib/tftpboot/lab/525400794D9D/LEAF03.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:18:25
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE01/SPINE01.conf>> >>> >>/var/lib/tftpboot/lab/525400DC0BEB/SPINE01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:18:25
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE02/SPINE02.conf>> >>> >>/var/lib/tftpboot/lab/525400A0A41D/SPINE02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:18:26
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF01/LEAF01.conf>> >>> >>/var/lib/tftpboot/lab/525400B209F0/LEAF01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:18:27
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF02/LEAF02.conf>> >>> >>/var/lib/tftpboot/lab/5254001E3118/LEAF02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:18:27
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF03/LEAF03.conf>> >>> >>/var/lib/tftpboot/lab/525400794D9D/LEAF03.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:20:13
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE01/SPINE01.conf>> >>> >>/var/lib/tftpboot/lab/525400DC0BEB/SPINE01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:20:16
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE02/SPINE02.conf>> >>> >>/var/lib/tftpboot/lab/525400A0A41D/SPINE02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:20:19
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF01/LEAF01.conf>> >>> >>/var/lib/tftpboot/lab/525400B209F0/LEAF01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:20:21
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF02/LEAF02.conf>> >>> >>/var/lib/tftpboot/lab/5254001E3118/LEAF02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:20:24
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF03/LEAF03.conf>> >>> >>/var/lib/tftpboot/lab/525400794D9D/LEAF03.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:23:58
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE01/SPINE01.conf>> >>> >>/var/lib/tftpboot/lab/525400DC0BEB/SPINE01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:24:01
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE02/SPINE02.conf>> >>> >>/var/lib/tftpboot/lab/525400A0A41D/SPINE02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:24:03
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF01/LEAF01.conf>> >>> >>/var/lib/tftpboot/lab/525400B209F0/LEAF01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:24:05
+Downloaded by : vagrant
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF02/LEAF02.conf>> >>> >>/var/lib/tftpboot/lab/5254001E3118/LEAF02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:24:37
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE01/SPINE01.conf>> >>> >>/var/lib/tftpboot/lab/525400DC0BEB/SPINE01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:24:37
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE02/SPINE02.conf>> >>> >>/var/lib/tftpboot/lab/525400A0A41D/SPINE02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:24:38
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF01/LEAF01.conf>> >>> >>/var/lib/tftpboot/lab/525400B209F0/LEAF01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:24:39
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF02/LEAF02.conf>> >>> >>/var/lib/tftpboot/lab/5254001E3118/LEAF02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:24:39
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF03/LEAF03.conf>> >>> >>/var/lib/tftpboot/lab/525400794D9D/LEAF03.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:28:06
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE01/SPINE01.conf>> >>> >>/var/lib/tftpboot/lab/525400DC0BEB/SPINE01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:28:07
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE02/SPINE02.conf>> >>> >>/var/lib/tftpboot/lab/525400A0A41D/SPINE02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:28:07
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF01/LEAF01.conf>> >>> >>/var/lib/tftpboot/lab/525400B209F0/LEAF01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:28:08
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF02/LEAF02.conf>> >>> >>/var/lib/tftpboot/lab/5254001E3118/LEAF02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:28:09
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF03/LEAF03.conf>> >>> >>/var/lib/tftpboot/lab/525400794D9D/LEAF03.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:29:03
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE01/SPINE01.conf>> >>> >>/var/lib/tftpboot/lab/525400DC0BEB/SPINE01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:29:04
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE02/SPINE02.conf>> >>> >>/var/lib/tftpboot/lab/525400A0A41D/SPINE02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:29:04
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF01/LEAF01.conf>> >>> >>/var/lib/tftpboot/lab/525400B209F0/LEAF01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:29:05
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF02/LEAF02.conf>> >>> >>/var/lib/tftpboot/lab/5254001E3118/LEAF02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:29:06
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF03/LEAF03.conf>> >>> >>/var/lib/tftpboot/lab/525400794D9D/LEAF03.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:31:32
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE01/SPINE01.conf>> >>> >>/var/lib/tftpboot/lab/525400DC0BEB/SPINE01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:31:33
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE02/SPINE02.conf>> >>> >>/var/lib/tftpboot/lab/525400A0A41D/SPINE02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:31:34
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF01/LEAF01.conf>> >>> >>/var/lib/tftpboot/lab/525400B209F0/LEAF01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:31:34
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF02/LEAF02.conf>> >>> >>/var/lib/tftpboot/lab/5254001E3118/LEAF02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:31:35
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF03/LEAF03.conf>> >>> >>/var/lib/tftpboot/lab/525400794D9D/LEAF03.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:32:30
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE01/SPINE01.conf>> >>> >>/var/lib/tftpboot/lab/525400DC0BEB/SPINE01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:32:31
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE02/SPINE02.conf>> >>> >>/var/lib/tftpboot/lab/525400A0A41D/SPINE02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:32:32
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF01/LEAF01.conf>> >>> >>/var/lib/tftpboot/lab/525400B209F0/LEAF01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:32:33
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF02/LEAF02.conf>> >>> >>/var/lib/tftpboot/lab/5254001E3118/LEAF02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:32:34
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF03/LEAF03.conf>> >>> >>/var/lib/tftpboot/lab/525400794D9D/LEAF03.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:33:10
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE01/SPINE01.conf>> >>> >>/var/lib/tftpboot/lab/525400DC0BEB/SPINE01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:33:13
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/SPINE02/SPINE02.conf>> >>> >>/var/lib/tftpboot/lab/525400A0A41D/SPINE02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:33:15
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF01/LEAF01.conf>> >>> >>/var/lib/tftpboot/lab/525400B209F0/LEAF01.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:33:18
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF02/LEAF02.conf>> >>> >>/var/lib/tftpboot/lab/5254001E3118/LEAF02.conf
+############################ STARTUP CONFIG FILE COPYING #############################
+Date and Time : 10/21/18 22:33:20
+Downloaded by : root
+      File Copying        
+
+
+/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/eos/LEAF03/LEAF03.conf>> >>> >>/var/lib/tftpboot/lab/525400794D9D/LEAF03.conf

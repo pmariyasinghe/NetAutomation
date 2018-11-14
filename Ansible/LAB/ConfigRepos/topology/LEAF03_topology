@@ -1,0 +1,1 @@
+[{"neighborDevice": "SPINE01.LAB.AUTO.ME", "neighborPort": "Ethernet3", "port": "Ethernet4", "validation": "PASS"}, {"neighborDevice": "SPINE02.LAB.AUTO.ME", "neighborPort": "Ethernet3", "port": "Ethernet5", "validation": "PASS"}]

@@ -1,0 +1,69 @@
+---
+##### COMMAND: ansible-playbook -i hosts tasks/validate/validate-topology.yml --ask-pass
+- name: Generate Topology config
+  hosts: veos-lab
+  tasks:
+  - template: src=/vagrant/NetAutomation/Ansible/LAB/templates/{{dev_os}}/topology_validation.j2 dest=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/topology/{{hostname}}_topology
+
+- name: Create topology log file for each host  if doesnt exist
+  hosts: veos-lab
+  tasks:
+  - file: path=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/LOGS/{{hostname}}_topology.log state=touch
+
+- name: Topology validation
+  hosts: veos-lab
+  tasks:
+  - script: /usr/bin/python /vagrant/NetAutomation/Ansible/LAB/scripts/lab_show_lldp_neighbours.py {{hostname}} /vagrant/NetAutomation/Ansible/LAB/ConfigRepos/topology/{{hostname}}_topology {{ansible_ssh_pass}}
+
+- name: Create Compliance report on topology for each host if doesnt exist
+  hosts: veos-lab
+  tasks:
+  - file: path=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/compliance/{{hostname}}_topology_report.yml state=touch
+
+- name: Topology validation update results
+  hosts: veos-lab
+  tasks:
+  - shell: cat /vagrant/NetAutomation/Ansible/LAB/ConfigRepos/topology/{{hostname}}_topology
+    register: result
+  - debug: var={{ (result.stdout | from_json | first).validation }}
+#    with_items: "{{ result.stdout | from_json }}"
+#  - blockinfile:
+#       dest: /vagrant/NetAutomation/Ansible/LAB/ConfigRepos/compliance/{{hostname}}_topology_report.yml
+#       marker: "#{mark} Topology compliance report for {{hostname}}"
+#       block: |
+#         topology:
+#         {% for i in topology %}
+#          {% for j in  (result.stdout | from_json) %}
+#           {% if i.neighborDevice == j.neighborDevice and j.validation == "PASS" %}
+##             {% if j.validation == "PASS" %}
+#              - NeighborDevice: "{{j.neighborDevice}}"
+#                compliance: true
+#           {% else %}
+#              - NeighborDevice: "{{j.neighborDevice}}"
+#                compliance: false
+#           {% endif %}
+#          {% endfor %}
+#         {% endfor %}
+##    with_items: "{{ result.stdout }}"
+  - blockinfile:
+       dest: /vagrant/NetAutomation/Ansible/LAB/ConfigRepos/compliance/{{hostname}}_topology_report.yml
+       marker: "#{mark} Topology compliance report for {{hostname}}"
+       block: |
+         topology:
+         {% for j in item.0 %}
+          {% for i in item.1 %}
+           {% if j['neighborDevice'] == i.neighborDevice and i.validation == "PASS" %}
+             - NeighborDevice: j['neighborDevice']
+               compliance: true
+           {% elif j['neighborDevice'] == i.neighborDevice and i.validation != "PASS" %}
+             - NeighborDevice: i.neighborDevice
+               compliance: false
+           {% endif %}
+          {% endfor %}
+         {% endfor %}
+#      when item.0.['neighborDevice'] == item.1.neighborDevice
+    with_together:
+      - "{{ topology }}"
+      - "{{ result.stdout }}"
+
+

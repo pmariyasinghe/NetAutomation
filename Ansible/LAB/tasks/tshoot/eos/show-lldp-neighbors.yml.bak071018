@@ -7,12 +7,9 @@
 
  - name: Check ARP table on switch
    hosts: veos-lab
-#   environment: 
-#     no_proxy: 192.168.100.0/24
    tasks:
    - eos_command:
        commands: "show lldp neighbors | json"
-       provider: "{{ eos_connection }}"
      register: result
    - debug: var=result
    - set_fact: lldp_neighbors="{{ result.stdout[0].lldpNeighbors | to_yaml }}"

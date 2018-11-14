@@ -1,0 +1,5 @@
+---
+  mlag_domian_id: vEOS-LEAF12
+  mlag_vlan: 4094
+  mlag_vlan_name: mlag-vlan
+  mlag_vlan_desc: PEER-LINK

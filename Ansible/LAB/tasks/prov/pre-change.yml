@@ -1,0 +1,60 @@
+---
+#### COMMAND: ansible-playbook tasks/prov/pre-change.yml
+
+- name: Create target HOSTNAME dir on the LOCALHOST if doesnt exist
+  hosts: local
+  tasks:
+  - file: path=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/{{hostvars[item]['dev_os']}}/{{hostvars[item]['hostname']}} state=directory  mode=0755
+    with_items: "{{ groups['veos-lab'] }}"
+
+- name: Generate configuration files for Arista LAB
+  hosts: veos-lab
+  tasks:
+  - template: src=/vagrant/NetAutomation/Ansible/LAB/templates/{{dev_os}}/base.j2 dest=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/{{dev_os}}/{{hostname}}/{{hostname}}.conf
+
+- name: Checks and create target MAC dir on the REMOTE host
+  hosts: remote-servers
+  tasks:
+  - block:
+    - name: Checks existance of target MAC dir on the REMOTE host
+      stat: path="/var/lib/tftpboot/lab/{{hostvars[item]['system_mac_address']}}"
+      register: "dir_status"
+      with_items: "{{ groups['veos-lab'] }}"
+#    - debug: var=dir_status
+#    - debug: msg="item.item={{item.item}}, item.changed={{item.changed}}"
+#      with_items: "{{dir_status.results}}"
+
+    - name: Creates target MAC dir on the REMOTE host if it doesn't
+      file: dest="{{item.invocation.module_args.path}}" state=directory owner=nobody group=root mode=0777
+      become: True
+      become_user: root
+      become_method: sudo
+      when: item.stat.exists == False
+      with_items: "{{dir_status.results}}"
+
+- name: Copy TFTP startup configuration REMOTE host
+  hosts: remote-servers
+  tasks:
+  - template: src=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/{{hostvars[item]['dev_os']}}/{{hostvars[item]['hostname']}}/{{hostvars[item]['hostname']}}.conf dest=/var/lib/tftpboot/lab/{{hostvars[item]['system_mac_address']}}/{{hostvars[item]['hostname']}}.conf
+    with_items: "{{ groups['veos-lab'] }}"
+
+- name: Generate DHCP config for the switch being provisoned.
+  hosts: local
+  tasks:
+  - template: src=/vagrant/NetAutomation/Ansible/LAB/templates/dhcpd.j2 dest=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/{{hostvars[item]['dev_os']}}/dhcpd-arista.conf 
+    with_items: "{{ groups['veos-lab'] }}"
+
+- name: Sync DHCP conf to remote host
+  hosts: remote-servers
+  tasks:
+  - template: src=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/{{hostvars[item]['dev_os']}}/dhcpd-arista.conf dest=/etc/dhcp/lab/dhcpd-arista.conf
+    with_items: "{{ groups['veos-lab'] }}"
+
+- name: Restart DHCP Server
+  hosts: remote-servers
+  tasks:
+#  - command: ssh root@server-mgmt -i ~/.ssh/server-mgmt_rsa -C 'service dhcpd restart'
+   - service: 
+       name: dhcpd
+       state: restarted
+

@@ -1,0 +1,15 @@
+#BEGIN Topology compliance report for SPINE01
+topology:
+ - NeighborDevice: LEAF01.LAB.AUTO.ME
+   Localport: "Ethernet1"
+   NeighborPort: "Ethernet4"
+   Validation: "PASS"
+ - NeighborDevice: LEAF02.LAB.AUTO.ME
+   Localport: "Ethernet2"
+   NeighborPort: "Ethernet4"
+   Validation: "PASS"
+ - NeighborDevice: LEAF03.LAB.AUTO.ME
+   Localport: "Ethernet3"
+   NeighborPort: "Ethernet4"
+   Validation: "PASS"
+#END Topology compliance report for SPINE01

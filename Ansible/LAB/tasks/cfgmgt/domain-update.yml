@@ -1,0 +1,7 @@
+---
+- name: Doamin update
+  hosts: veos-lab
+  tasks:
+   - eos_system:
+      domain_name: "{{domain_name}}"
+      provider: "{{ eos_connection }}"

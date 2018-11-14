@@ -1,0 +1,25 @@
+---
+- name: Topology validation update results
+  hosts: veos-lab
+  tasks:
+  - shell: cat /vagrant/NetAutomation/Ansible/LAB/ConfigRepos/topology/{{hostname}}_topology
+    register: results
+#  - debug: var=results
+  - set_fact:
+    myvar: "{{ result.stdout | from_json }}" 
+  - debug: var=results
+
+
+#- name: Topology validation - update results
+#  hosts: veos-lab
+#  include_vars:
+#     file: /vagrant/NetAutomation/Ansible/LAB/ConfigRepos/topology/{{hostname}}_topology
+#     name: "{{ results | nice_to_yaml }}"
+#  tasks:
+#  - debug: name
+##  - set_facts: {"{{ item.validation }}":"{{ item.val }}"}
+
+##- name: Topology validation
+##  script: /usr/bin/python ~/ansible/roles/LAB/HPN/scripts/lab_show_lldp_neighbours.py {{item.hostname}} {"Neighbors":{{item.topology}}} {{ansible_user}} {{ansible_ssh_pass}}
+##  with_items: LAB_TOPOLOGY
+   

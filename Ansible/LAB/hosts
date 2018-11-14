@@ -3,15 +3,27 @@
 [brocade]
 
 [veos-lab]
-veos1.lab.ecmwf.int ansible_host=192.168.56.101  ansible_os=eos ansible_user=admin ansible_ssh_pass=admin transport=https ansible_port=22 api_port=443
-#veos2.lab.ecmwf.int ansible_host=192.168.56.102  ansible_os=eos ansible_user=admin ansible_ssh_pass=admin transport=https ansible_port=22 api_port=443
-#veos3.lab.ecmwf.int ansible_host=192.168.56.103  ansible_os=eos ansible_user=admin ansible_ssh_pass=admin transport=https ansible_port=22 api_port=443
-#veos4.lab.ecmwf.int ansible_host=192.168.56.104  ansible_os=eos ansible_user=admin ansible_ssh_pass=admin transport=https ansible_port=22 api_port=443
+SPINE01 ansible_host=192.168.100.101 hostname=SPINE01 dev_os=eos 
+SPINE02 ansible_host=192.168.100.102 hostname=SPINE02 dev_os=eos 
+LEAF01 ansible_host=192.168.100.103 hostname=LEAF01 dev_os=eos 
+LEAF02 ansible_host=192.168.100.104 hostname=LEAF02  dev_os=eos 
+LEAF03 ansible_host=192.168.100.104 hostname=LEAF03 dev_os=eos
+
+[veos-Spine12]
+SPINE01 ansible_host=192.168.100.101 hostname=SPINE01 dev_os=eos
+SPINE02 ansible_host=192.168.100.102 hostname=SPINE02 dev_os=eos
+
+[veos-Leaf12]
+LEAF01 ansible_host=192.168.100.103 hostname=LEAF01 dev_os=eos
+LEAF02 ansible_host=192.168.100.104 hostname=LEAF02 dev_os=eos
+
 
 [LAB:children]
 veos-lab
-local
+
+[remote-servers]
+server-mgmt ansible_host=192.168.100.2 hostname=server-mgmt dev_os=linux
 
 [local]
-localhost os=arista hostname=localhost
+localhost dev_os=linux hostname=localhost
 

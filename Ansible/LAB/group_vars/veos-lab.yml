@@ -1,0 +1,33 @@
+---
+ domain_name: LAB.AUTO.ME
+ name_server: 192.168.100.2
+ eos_connection:
+  host: "{{ inventory_hostname }}"
+  username: admin
+  password: admin
+  transport: eapi
+  use_ssl: true
+ terminal_length: 48
+ buffered: 1000
+ mgmt_vrf: mgmt
+ mgmt_vrf_rd: 0:192.168.100.0
+ logging_host1: 192.168.100.1
+ logging_host2: 192.168.100.2
+ logging_fac: local7
+ ntp_server1: 192.168.100.1
+ ntp_server2: 192.168.100.2
+ snmp_contacts: 'PA x1234, TT x4567'
+ snmp_community_rw: LAB-rw
+ snmp_community_ro1: LAB-ro1
+ snmp_community_ro2: LAB-ro2
+ snmp_server1: 192.168.100.1
+ snmp_server2: 192.168.100.2
+ snmp_version: 2c
+ spanning_tree_mode: rapid-pvst
+ tacacs_key: lkeufo4eriflkenfla
+ tacacs_timeout: 3
+ tacacs_server1: 192.168.100.1
+ tacacs_server2: 192.168.100.2
+ enable_secret: $1$tW27BRl7$btZsoDQ4gcmbuLMKxL2x5/
+ admin_password: $1$Wh0aqty1$lz6h9CQmCi6FugwRztoxC.
+ macadd_age_time: 30

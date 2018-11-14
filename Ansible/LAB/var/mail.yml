@@ -1,0 +1,11 @@
+---
+LAB_SWITCHES:
+   - hostname: veos1.lab.ecmwf.int
+     system_mac_address: "0800279335D5"
+     snmp_location: CH-LAB1
+     hostname_mgmt_ip: 192.168.56.101/24
+     hostname_mgmt_mac: "08:00:27:dc:c4:2a"
+     domian_id: vEOS-LAB
+     peer_ip : 10.0.0.2
+     vlans:
+

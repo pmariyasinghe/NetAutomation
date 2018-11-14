@@ -1,0 +1,6 @@
+---
+   private-key: ~/.ssh/server-mgmt_rsa
+   ansible_connection: ssh
+   ansible_ssh_pass : admin
+   ansible_ssh_user : root
+

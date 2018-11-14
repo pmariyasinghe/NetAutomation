@@ -1,0 +1,11 @@
+#Arista LAB
+
+{% for i in groups['veos-lab'] %}
+host {{ hostvars[i]['hostname'].split(".")[0] }} {
+option host-name "{{ hostvars[i]['hostname'] }}";
+hardware ethernet {{ hostvars[i]['hostname_mgmt_mac'] }};
+fixed-address {{ hostvars[i]['hostname_mgmt_ip'].split("/")[0] }};
+     option bootfile-name "tftp://192.168.100.2/ztp/ztp-switch-script.py";
+}
+{% endfor %}
+

@@ -1,0 +1,120 @@
+#!/usr/bin/env python
+
+from os.path import expanduser
+import sys
+import time
+import yaml
+
+inFile = "/home/ADSERV/ansible/ansible/CFG/HPN/REPOS/CURRENT/torche"
+outFile = "/home/ADSERV/ansible/ansible/CFG/HPN/REPOS/CURRENT/torche.yml"
+ifLine = False
+portConf = False
+poConf = False
+portEnable = True
+ipInt = False
+
+with open(outFile,"w") as ofile:
+     
+     ofile.write("---\n")
+     ofile.write("model: DCS-7050S-64\n")
+     ofile.write("eos: EOS-4.12.8.1\n")
+     ofile.write("snmp_location: CH:L2\n")
+     ofile.write("\n")
+  
+     with open(inFile,"r") as ifile:
+
+          for line in ifile.readlines():
+
+              line = line.strip()
+              
+              if 'interface' in line : 
+                      portConf = True
+                      if not ifLine:
+                         ofile.write("interfaces:\n")
+                         ifLine = True
+                      ofile.write( "   - { int: " + line.split()[1] + " ,\n")
+                      
+                      if 'Ethernet' in line :
+                          ofile.write( "       type: eth ,\n")
+                          ofile.write( "       trunk: false ,\n")
+                          ofile.write( "       vlan: none ,\n")
+                      elif 'Port-Channel' in line:
+                          ofile.write( "       type: po ,\n")
+                          if line.split()[1] == 'Port-Channel1' :
+                             ofile.write( "       trunk: true ,\n")
+                          poConf = True
+                      elif 'Management' in line :
+                          ofile.write( "       type: mgt ,\n")
+                          ofile.write( "       trunk: false ,\n")
+                          ofile.write( "       vlan: none ,\n")
+                          poConf = True
+                      elif 'Vlan' in line :
+                          ofile.write( "       type: vlan ,\n")
+                          ofile.write( "       trunk: false ,\n")
+                          ofile.write( "       vlan: none ,\n")
+
+              elif 'description' in line :
+                       tline = ""
+                       sline = line.split()
+                       for i in xrange(1,len(sline)): 
+                           tline = tline + " " + sline[i]
+                       ofile.write( "       description: '" + tline + "' ,\n")
+             
+              elif 'access vlan' in line :
+                       if poConf :
+                          ofile.write( "       trunk: false ,\n")
+                          sline = line.split()
+                          ofile.write( "       vlan: " + sline[3] + " ,\n")
+
+              elif 'trunk allowed vlan' in line :
+                       if poConf :
+                          ofile.write( "       trunk: true ,\n")
+                          sline = line.split()
+                          ofile.write( "       vlan: '" + sline[4] + "' ,\n")
+
+              elif 'channel-group' in line :
+                       sline = line.split()
+                       ofile.write( "       channel_grp: " + sline[1] + " ,\n")
+
+              elif 'shutdown' in line :
+                    portEnable = False
+
+              elif 'ip address' in line :
+                    ipInt = True
+                    ofile.write( "       ip: " + line.split()[2] + " ,\n")
+
+                   
+              elif '!' in line :
+                    if not '!!' in line :
+                       poConf = False
+                       if portConf :
+                          if not ipInt :
+                             ofile.write( "       ip: none ,\n")
+                          elif ipInt :
+                             ipInt = False
+                          if portEnable :
+                             ofile.write( "       enabled: true }\n")
+                          elif not portEnable : 
+                             ofile.write( "       enabled: false }\n")
+                             portEnable = True
+                          portConf = False
+
+
+#              if 'interface' in line:
+#                 portConf = True
+#                 if not ifLine:
+#                    ofile.write("interfaces:\n")
+#                    ifLine = True
+#                 ofile.write("   - { int: "Ethernet1 ,"")
+#
+#              else '!' in line:
+#                   portConf = False
+#              
+#              ofile.write("   - { int: "Ethernet1 ,
+#              ofile.write(line)
+#              ofile.write("\n")
+
+     ifile.close()
+
+ofile.close()
+

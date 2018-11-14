@@ -1,0 +1,127 @@
+terminal length {{terminal_length}}
+!
+logging {{buffered}} 10000 informational
+logging vrf {{mgmt_vrf}} host {{logging_host1}}
+logging vrf {{mgmt_vrf}} host {{logging_host2}}
+logging facility {{logging_fac}}
+!
+hostname {{hostname}}
+ip name-server {{name_server}}
+ip domain-name {{domain_name}}
+!
+ntp server {{ntp_server1}}
+ntp server {{ntp_server2}} prefer
+!
+snmp-server contact {{snmp_contacts}}
+snmp-server location {{snmp_location}}
+snmp-server community {{snmp_community_rw}} rw
+snmp-server community {{snmp_community_ro1}} ro
+snmp-server community {{snmp_community_ro2}} ro
+snmp-server host {{snmp_server1}} version {{snmp_version}} {{snmp_community_rw}}
+snmp-server host {{snmp_server2}} {{snmp_server2}} version {{snmp_version}} {{snmp_community_rw}}
+!
+spanning-tree mode rapid-pvst{{spanning_tree_mode}}
+!
+{% if hostname == "LEAF01" or hostname == "LEAF02" %}
+no spanning-tree {{mlag_vlan}} 
+{% endif %}
+!
+tacacs-server key 7 {{tacacs_key}}
+tacacs-server timeout {{tacacs_timeout}}
+tacacs-server host {{tacacs_server1}} vrf {{mgmt_vrf}}
+tacacs-server host {{tacacs_server2}} vrf {{mgmt_vrf}}
+!
+aaa authentication login default local group tacacs+
+aaa authorization exec default local group tacacs+
+!
+enable secret 5 {{enable_secret}}
+no aaa root
+!
+username admin privilege 15 role network-admin secret 5 {{admin_password}}
+
+{% if hostname == "LEAF01" or hostname == "LEAF02" %}
+vlan {{mlag_vlan}}
+name {{mlag_name}}
+trunk group peer-link
+{% endif %}
+!
+vrf definition mgmt
+   rd {{mgmt_vrf_rd}}
+!
+mac address-table aging-time {{macadd_age_time}}
+!
+{% if hostname == "LEAF01" or hostname == "LEAF02" %}
+interface Port-Channel{{peer_con_po}} 
+   description Peer-Link
+   switchport mode trunk
+   switchport trunk group peer-link
+{% for i in peer_con %}
+!
+interface {{i.port}}
+   description {{i.desc}}
+   channel-group {{peer_con_po}} mode on
+{% endfor %}
+{% endif %}
+!
+{% if hostname == "LEAF01" or hostname == "LEAF02" or hostname == "LEAF03" %}
+{% for i in spine_con %}
+!
+interface {{i.port}}
+   description {{i.desc}}
+   no switchport
+   ip address {{i.ip}}
+{% endfor %}
+{% endif %}
+!
+{% if hostname == "SPINE01" or hostname == "SPINE02" %}
+{% for i in leaf_con %}
+!
+interface {{i.port}}
+   description {{i.desc}}
+   no switchport
+   ip address {{i.ip}}
+{% endfor %}
+{% endif %}
+!
+interface Management1
+   description OOB-Management
+   vrf forwarding {{mgmt_vrf}}
+   ip address {{hostname_mgmt_ip}}
+!
+{% if hostname == "LEAF01" or hostname == "LEAF02" %}
+interface vlan{{mlag_vlan}}
+{% if mlag_vlan == 4094 %}
+description {{mlag_name}}
+no autostate
+ip address {{mlag_ip}}
+{% endif %}
+{% endif %}
+!
+mac address-table aging-time 30
+!
+ip routing
+!
+ip route vrf {{mgmt_vrf}} 0.0.0.0/0 192.168.100.1
+!
+{% if hostname == "LEAF01" or hostname == "LEAF02" %}
+mlag configuration
+   domain-id {{domian_id}}
+   heartbeat-interval 30000
+   local-interface vlan {{mlag_vlan}}
+   peer-address {{mlag_peer_ip}}
+   primary-priority 10
+   peer-link Port-Channel{{peer_con_po}}
+   reload-delay 180
+{% endif %}
+!
+management api http-commands
+   no shutdown
+   vrf mgmt
+      no shutdown
+!
+management ssh
+   idle-timeout 720
+!
+!
+end
+

@@ -1,0 +1,7 @@
+---
+#### COMMAND: ansible-playbook -i hosts tasks/reset/reset-config.yml -u admin --ask-pass
+
+- name: To reset all Arista switches
+  hosts: veos-lab
+  tasks:
+  - script: /usr/bin/python /vagrant/NetAutomation/Ansible/LAB/scripts/eos-config-reset.py {{ansible_user}} {{hostname}} {{ansible_ssh_pass}}
