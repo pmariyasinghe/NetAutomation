@@ -13,16 +13,19 @@ virtual hosts used in my lab:
   Services running on this host are DHCP and TFTP.
 - L3 and L2 switches: Arista veos 4.17.8M   
 
-This Network automation lab contains a number of playbooks which represent the following action
-• Zero touch provisioning 
-  o Generate config templates for SPINE and LEAF switches based on initial attributes define in host file.
-  o Push the configuration templates to the TFTP server
-  o Update DHCP config entries for each network host using its Management interface’s MAC address with and restart DHCP server
-  o The network host in its initial boot downloads a python script from the TFTP server to and execute the given instructions in the script. 
+This Network automation lab contains a number of playbooks which represent the following action.
+
+- Zero touch provisioning
+ 
+  - Generate config templates for SPINE and LEAF switches based on initial attributes define in host file.
+  - Push the configuration templates to the TFTP server.
+  - Update DHCP config entries for each network host using its Management interface’s MAC address with and restart DHCP server.
+  - The network host in its initial boot downloads a python script from the TFTP server to and execute the given instructions in the script. 
     This script checks it’s system MAC address and download the relevant configuration template to the host including the correct firmware. 
 	
-• Validate LLDP neighbours
-• Build topology
+- Validate LLDP neighbours
+
+- Build topology
 
 
 - 
