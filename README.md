@@ -1,5 +1,13 @@
 Network Automation lab
 
+Please note my lab is pretty much similar to LAB topolgy used in the following link.
+
+https://the-bitmask.com/2017/07/11/arista-veos-l3slv-part1/
+
+Whole idea behind designing a lab using vEOS, VXLAN and KVM was encouraged by above Pablo Narváez's great article. Therefore Hats off to 
+Pablo who did a great job putting this article together making it everyone to create a LAB environment in virtual environments more 
+effective manner.
+
 For this lab, I created a self-contained virtual environment with CentOS Linux/KVM, vagrant and Arista virtual EOS (vEOS). 
 Here I’m trying to address all of the technically challenges when a network needs to be built programmatically. I think building 
 a network from the ground up level programmatically is important as much as maintaining it programmatically. Python is the 
@@ -26,6 +34,5 @@ This Network automation lab contains a number of playbooks which represent the f
 - Validate LLDP neighbours
 
 - Build topology
-
 
 - 
