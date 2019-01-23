@@ -1,0 +1,31 @@
+---
+ - name: Check arp-table file
+   hosts: local
+   tasks:
+   - file: path=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/reports/arp.log state=absent
+   - file: path=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/reports/arp.log state=touch
+
+ - name: Check ARP table on switch
+   hosts: veos-lab
+   tasks:
+   - eos_command:
+       commands: "show arp | json"
+       provider: "{{ eos_connection }}"
+     register: result
+   - debug: var=result
+   - copy:
+       content: |
+           {{result.stdout_lines[0]|to_nice_yaml(indent=2)}}
+       dest: "/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/tshoot/{{hostname}}/arp.yml"
+
+ - name: Generate ARP table report from each host
+   hosts: veos-lab
+   order: sorted
+   tasks:
+   - include_vars: "/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/tshoot/{{hostname}}/arp.yml"
+   - lineinfile:
+       dest: "/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/reports/arp.log"
+       regexp: "ipV4Neighbors"
+       line: |
+          {{hostname}} {{ipV4Neighbors}}
+

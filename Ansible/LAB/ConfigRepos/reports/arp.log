@@ -1,0 +1,6 @@
+LEAF02 [{u'hwAddress': u'5254.00b2.09f0', u'interface': u'Vlan4094, Port-Channel6', u'age': 0, u'address': u'10.0.0.1'}]
+
+LEAF03 []
+
+SPINE02 []
+

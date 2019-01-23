@@ -1,0 +1,22 @@
+---
+ - name: Check uptiem file
+   hosts: local
+   tasks:
+   #- file: path=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/reports/arp_table.csv state=absent
+   - file: path=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/reports/uptime.csv state=touch
+
+ - name: Check UPTIME on switch
+   hosts: veos-lab
+   tasks:
+   - eos_command:
+       commands: "show uptime | text"
+       provider: "{{ eos_connection }}"
+     register: result
+   - debug: var=result
+   - set_fact: arp_table="{{ result.stdout[0] }}"
+#   - lineinfile:
+#       dest:   /vagrant/NetAutomation/Ansible/LAB/ConfigRepos/reports/uptime.csv
+#       regexp: "^{{inventory_hostname}},{{item['interface']}},{{item['address']}}"
+#       line:   "{{inventory_hostname}},{{item['interface']}},{{item['address']}},{{item['hwAddress']}}"
+#     with_items: "{{arp_table}}"
+#

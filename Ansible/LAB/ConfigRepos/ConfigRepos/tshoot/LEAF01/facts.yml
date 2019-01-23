@@ -1,0 +1,143 @@
+ansible_net_all_ipv4_addresses:
+- 192.168.100.103
+- 10.0.0.1
+- 172.16.11.2
+- 172.16.21.2
+ansible_net_all_ipv6_addresses: []
+ansible_net_filesystems:
+- 'file:'
+- 'flash:'
+- 'system:'
+ansible_net_fqdn: LEAF01.LAB.AUTO.ME
+ansible_net_gather_subset:
+- hardware
+- default
+- interfaces
+ansible_net_hostname: LEAF01
+ansible_net_image: flash:/EOS.swi
+ansible_net_interfaces:
+    Ethernet1:
+        bandwidth: 0
+        description: ''
+        duplex: duplexFull
+        ipv4: {}
+        lineprotocol: up
+        macaddress: 52:54:00:8a:50:06
+        mtu: 9214
+        operstatus: connected
+        type: bridged
+    Ethernet2:
+        bandwidth: 0
+        description: ''
+        duplex: duplexFull
+        ipv4: {}
+        lineprotocol: up
+        macaddress: 52:54:00:be:d5:99
+        mtu: 9214
+        operstatus: connected
+        type: bridged
+    Ethernet3:
+        bandwidth: 0
+        description: ''
+        duplex: duplexFull
+        ipv4: {}
+        lineprotocol: up
+        macaddress: 52:54:00:89:fb:36
+        mtu: 9214
+        operstatus: connected
+        type: bridged
+    Ethernet4:
+        bandwidth: 0
+        description: Spine-Link-Spine01 Eth1
+        duplex: duplexFull
+        ipv4:
+            address: 172.16.11.2
+            masklen: 30
+        lineprotocol: up
+        macaddress: 52:54:00:b2:09:f0
+        mtu: 1500
+        operstatus: connected
+        type: routed
+    Ethernet5:
+        bandwidth: 0
+        description: Spine-Link-Spine02 Eth1
+        duplex: duplexFull
+        ipv4:
+            address: 172.16.21.2
+            masklen: 30
+        lineprotocol: up
+        macaddress: 52:54:00:b2:09:f0
+        mtu: 1500
+        operstatus: connected
+        type: routed
+    Ethernet6:
+        bandwidth: 0
+        description: Peer-Link-Leaf02 E6 Po6
+        duplex: duplexFull
+        ipv4: {}
+        lineprotocol: up
+        macaddress: 52:54:00:60:7f:85
+        mtu: 9214
+        operstatus: connected
+        type: dataLink
+    Ethernet7:
+        bandwidth: 0
+        description: Peer-Link-Leaf02 E7 Po6
+        duplex: duplexFull
+        ipv4: {}
+        lineprotocol: up
+        macaddress: 52:54:00:a2:f0:06
+        mtu: 9214
+        operstatus: connected
+        type: dataLink
+    Management1:
+        bandwidth: 1000000000
+        description: OOB-Management
+        duplex: duplexFull
+        ipv4:
+            address: 192.168.100.103
+            masklen: 24
+        lineprotocol: up
+        macaddress: 52:54:00:e2:58:8b
+        mtu: 1500
+        operstatus: connected
+        type: routed
+    Port-Channel6:
+        bandwidth: 0
+        description: Peer-Link
+        ipv4: {}
+        lineprotocol: up
+        macaddress: 52:54:00:60:7f:85
+        mtu: 9214
+        operstatus: connected
+        type: bridged
+    Vlan4094:
+        bandwidth: 0
+        description: mlag-vlan
+        ipv4:
+            address: 10.0.0.1
+            masklen: 24
+        lineprotocol: up
+        macaddress: 52:54:00:b2:09:f0
+        mtu: 1500
+        operstatus: connected
+        type: routed
+ansible_net_memfree_mb: 422
+ansible_net_memtotal_mb: 1849
+ansible_net_model: vEOS
+ansible_net_neighbors:
+    Ethernet4:
+    -   host: SPINE01.LAB.AUTO.ME
+        port: Ethernet1
+    Ethernet5:
+    -   host: SPINE02.LAB.AUTO.ME
+        port: Ethernet1
+    Ethernet6:
+    -   host: LEAF02.LAB.AUTO.ME
+        port: Ethernet6
+    Ethernet7:
+    -   host: LEAF02.LAB.AUTO.ME
+        port: Ethernet7
+ansible_net_serialnum: ''
+ansible_net_version: 4.17.8M
+ 

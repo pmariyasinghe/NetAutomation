@@ -1,0 +1,9 @@
+dynamicEntries: 1
+ipV4Neighbors:
+- address: 10.0.0.2
+  age: 0
+  hwAddress: 5254.001e.3118
+  interface: Vlan4094, Port-Channel6
+notLearnedEntries: 0
+staticEntries: 0
+totalEntries: 1

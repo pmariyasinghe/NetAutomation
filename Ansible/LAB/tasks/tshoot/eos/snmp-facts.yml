@@ -1,0 +1,20 @@
+---
+- name: Create target HOSTNAME dir on the LOCALHOST if doesnt exist
+  hosts: local
+  tasks:
+  - file: path=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/ConfigRepos/tshoot/{{hostvars[item]['hostname']}} state=directory  mode=0755
+    with_items: "{{ groups['veos-lab'] }}"
+
+- name:  Collect SNMP Facts from devices. Save them to files 
+  hosts: veos-lab
+  tasks:
+  - snmp_facts: host="{{ansible_host}}" version="v2c" community="LAB-ro1"
+    connection: local
+  - eos_facts: provider={{eos_connection}} 
+  - copy: 
+      content: | 
+           {{groups['veos-lab']|to_nice_yaml(indent=4)}} 
+      dest: "/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/reports/snmp_facts.yml"
+
+
+ 

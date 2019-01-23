@@ -1,0 +1,93 @@
+ansible_net_all_ipv4_addresses:
+- 192.168.100.105
+- 172.16.13.2
+- 172.16.23.2
+ansible_net_all_ipv6_addresses: []
+ansible_net_filesystems:
+- 'file:'
+- 'flash:'
+- 'system:'
+ansible_net_fqdn: LEAF03.LAB.AUTO.ME
+ansible_net_gather_subset:
+- hardware
+- default
+- interfaces
+ansible_net_hostname: LEAF03
+ansible_net_image: flash:EOS.swi
+ansible_net_interfaces:
+    Ethernet1:
+        bandwidth: 0
+        description: ''
+        duplex: duplexFull
+        ipv4: {}
+        lineprotocol: up
+        macaddress: 52:54:00:be:41:75
+        mtu: 9214
+        operstatus: connected
+        type: bridged
+    Ethernet2:
+        bandwidth: 0
+        description: ''
+        duplex: duplexFull
+        ipv4: {}
+        lineprotocol: up
+        macaddress: 52:54:00:e8:91:d0
+        mtu: 9214
+        operstatus: connected
+        type: bridged
+    Ethernet3:
+        bandwidth: 0
+        description: ''
+        duplex: duplexFull
+        ipv4: {}
+        lineprotocol: up
+        macaddress: 52:54:00:9a:06:7e
+        mtu: 9214
+        operstatus: connected
+        type: bridged
+    Ethernet4:
+        bandwidth: 0
+        description: Spine-Link-Spine01 Eth3
+        duplex: duplexFull
+        ipv4:
+            address: 172.16.13.2
+            masklen: 30
+        lineprotocol: up
+        macaddress: 52:54:00:79:4d:9d
+        mtu: 1500
+        operstatus: connected
+        type: routed
+    Ethernet5:
+        bandwidth: 0
+        description: Spine-Link-Spine02 Eth3
+        duplex: duplexFull
+        ipv4:
+            address: 172.16.23.2
+            masklen: 30
+        lineprotocol: up
+        macaddress: 52:54:00:79:4d:9d
+        mtu: 1500
+        operstatus: connected
+        type: routed
+    Management1:
+        bandwidth: 1000000000
+        description: OOB-Management
+        duplex: duplexFull
+        ipv4:
+            address: 192.168.100.105
+            masklen: 24
+        lineprotocol: up
+        macaddress: 52:54:00:ca:57:84
+        mtu: 1500
+        operstatus: connected
+        type: routed
+ansible_net_memfree_mb: 350
+ansible_net_memtotal_mb: 1849
+ansible_net_model: vEOS
+ansible_net_neighbors:
+    Ethernet4:
+    -   host: SPINE01.LAB.AUTO.ME
+        port: Ethernet3
+ansible_net_serialnum: ''
+ansible_net_version: 4.17.8M
+ 

@@ -1,0 +1,21 @@
+---
+- name: Create target report file on the LOCALHOST if doesnt exist
+  hosts: local
+  tasks:
+  - file: path=/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/reports/firmware_version.log state=touch
+
+- name: Generate virmware version report from EOS Facts from the devices
+  hosts: veos-lab
+  order: sorted
+  tasks:
+  - include_vars: "/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/tshoot/{{hostname}}/facts.yml"
+  - lineinfile:
+      dest:   "/vagrant/NetAutomation/Ansible/LAB/ConfigRepos/reports/firmware_version.log"
+      regexp: "{{hostname}}"
+      line: |
+         {{hostname}} {{ansible_net_version}} {{ansible_net_interfaces.Management1.ipv4.address}}
+
+
+
+#{{hostname}} {{ansible_net_version}} {{ansible_net_memfree_mb}} {% for i in ansible_net_all_ipv4_addresses %} {{i}} {% endfor %}
+

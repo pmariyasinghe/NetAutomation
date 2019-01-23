@@ -1,0 +1,82 @@
+ansible_net_all_ipv4_addresses:
+- 172.16.12.1
+- 192.168.100.101
+- 172.16.11.1
+- 172.16.13.1
+ansible_net_all_ipv6_addresses: []
+ansible_net_filesystems:
+- 'file:'
+- 'flash:'
+- 'system:'
+ansible_net_fqdn: SPINE01.LAB.AUTO.ME
+ansible_net_gather_subset:
+- hardware
+- default
+- interfaces
+ansible_net_hostname: SPINE01
+ansible_net_image: flash:EOS.swi
+ansible_net_interfaces:
+    Ethernet1:
+        bandwidth: 0
+        description: Leaf-Link-Leaf01 Eth4
+        duplex: duplexFull
+        ipv4:
+            address: 172.16.11.1
+            masklen: 30
+        lineprotocol: up
+        macaddress: 52:54:00:dc:0b:eb
+        mtu: 1500
+        operstatus: connected
+        type: routed
+    Ethernet2:
+        bandwidth: 0
+        description: Leaf-Link-Leaf02 Eth4
+        duplex: duplexFull
+        ipv4:
+            address: 172.16.12.1
+            masklen: 30
+        lineprotocol: up
+        macaddress: 52:54:00:dc:0b:eb
+        mtu: 1500
+        operstatus: connected
+        type: routed
+    Ethernet3:
+        bandwidth: 0
+        description: Leaf-Link-Leaf03 Eth4
+        duplex: duplexFull
+        ipv4:
+            address: 172.16.13.1
+            masklen: 30
+        lineprotocol: up
+        macaddress: 52:54:00:dc:0b:eb
+        mtu: 1500
+        operstatus: connected
+        type: routed
+    Management1:
+        bandwidth: 1000000000
+        description: OOB-Management
+        duplex: duplexFull
+        ipv4:
+            address: 192.168.100.101
+            masklen: 24
+        lineprotocol: up
+        macaddress: 52:54:00:e5:c4:7a
+        mtu: 1500
+        operstatus: connected
+        type: routed
+ansible_net_memfree_mb: 662
+ansible_net_memtotal_mb: 1849
+ansible_net_model: vEOS
+ansible_net_neighbors:
+    Ethernet1:
+    -   host: LEAF01.LAB.AUTO.ME
+        port: Ethernet4
+    Ethernet2:
+    -   host: LEAF02.LAB.AUTO.ME
+        port: Ethernet4
+    Ethernet3:
+    -   host: LEAF03.LAB.AUTO.ME
+        port: Ethernet4
+ansible_net_serialnum: ''
+ansible_net_version: 4.17.8M
+ 
