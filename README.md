@@ -1,17 +1,16 @@
-Network Automation lab
+## Network Automation lab
 
 Please note my lab is pretty much similar to LAB topolgy used in the following link.
 
 https://the-bitmask.com/2017/07/11/arista-veos-l3slv-part1/
 
-Whole idea behind designing a lab using vEOS, VXLAN and KVM was encouraged by above Pablo Narváez's great article. Therefore Hats off to 
-Pablo who did a great job putting this article together making it possible to everyone to create a LAB environment in a virtual manner more 
-effectively.
+Whole idea behind designing a lab, using vEOS, VXLAN and KVM, was encouraged by above article. Therefore Hats off to 
+Pablo Narváez's  who did a great job putting this article together making it possible to someone like me to exeriment
+complex networking concepts in a virtual manner.
 
-![Topoloy diagram:](https://github.com/pmariyasinghe/NetAutomation/tree/master/vxlan-fabric-netwokdiagram.png)
 
 <p align="center">
-    <img src="vxlan-fabric-netwokdiagram.png" width="480"\>
+    <img src="vxlan-fabric-netwokdiagram.bmp" width="480"\>
 </p>
 
 For this lab, I created a self-contained virtual environment with CentOS Linux/KVM, vagrant and Arista virtual EOS (vEOS). 
@@ -29,16 +28,17 @@ virtual hosts used in my lab:
 
 This Network automation lab contains a number of playbooks which represent the following action.
 
-- Zero touch provisioning
+## Table of Contents
+* [Zero touch provisioning](*ZTP)
  
-  - Generate config templates for SPINE and LEAF switches based on initial attributes define in host file.
-  - Push the configuration templates to the TFTP server.
-  - Update DHCP config entries for each network host using its Management interface’s MAC address with and restart DHCP server.
-  - The network host in its initial boot downloads a python script from the TFTP server to and execute the given instructions in the script. 
+  + Generate config templates for SPINE and LEAF switches based on initial attributes define in host file.
+  + Push the configuration templates to the TFTP server.
+  + Update DHCP config entries for each network host using its Management interface’s MAC address with and restart DHCP server.
+  + The network host in its initial boot downloads a python script from the TFTP server to and execute the given instructions in the script. 
     This script checks it’s system MAC address and download the relevant configuration template to the host including the correct firmware. 
 	
-- Validate LLDP neighbours
+* [Validate LLDP neighbours](*validation)
 
-- Build topology
+* [Build topology](*topology)
 
 - 
