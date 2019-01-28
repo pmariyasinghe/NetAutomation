@@ -6,7 +6,7 @@ https://the-bitmask.com/2017/07/11/arista-veos-l3slv-part1/
 
 Whole idea behind designing a lab, using vEOS, VXLAN and KVM, was encouraged by above article. Therefore Hats off to 
 Pablo Narváez's  who did a great job putting this article together making it possible to someone like me to exeriment
-complex networking concepts in a virtual manner.
+complex networking concepts in virtual environments.
 
 
 <p align="center">
@@ -14,11 +14,12 @@ complex networking concepts in a virtual manner.
 </p>
 
 For this lab, I created a self-contained virtual environment with CentOS Linux/KVM, vagrant and Arista virtual EOS (vEOS). 
-Here I’m trying to address all of the technically challenges when a network needs to be built programmatically. I think building 
-a network from the ground up level programmatically is important as much as maintaining it programmatically. Python is the 
-programming language which I used for as my base scripting and although I didn’t have much experience with Python and managed to 
-suss out most of concepts including object oriented programming. This will allow us to build the network based on the backup 
-configuration in case of disaster.  
+Here I’m trying to address all of the technically challenges potentially we may experience when a network is deployed 
+and built programmatically. I think building a network from the ground-up level programmatically is important as much as 
+maintaining it programmatically. Thefore I spent considerable amount time on how to get the network built fast way with
+a little human touch. Python is the programming language which I used as my base scripting and although I didn’t have much 
+experience with Python and spent lot of time on Python coding and managed to suss out most of concepts including object 
+oriented programming. 
 
 virtual hosts used in my lab:
 - Ansible host: vagrant-ubuntu-trusty-64
@@ -40,5 +41,11 @@ This Network automation lab contains a number of playbooks which represent the f
 * [Validate LLDP neighbours](*validation)
 
 * [Build topology](*topology)
+
+
+## ZTP
+The actual automation of the building process is known as Zero Touch Provisioning (ZTP). Most major networking vendors have some 
+form of ZTP support, and the process is pretty simple. There are a few specific configurations needed on the ZTP server to make 
+everything work.
 
 - 
