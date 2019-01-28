@@ -5,10 +5,14 @@ Please note my lab is pretty much similar to LAB topolgy used in the following l
 https://the-bitmask.com/2017/07/11/arista-veos-l3slv-part1/
 
 Whole idea behind designing a lab using vEOS, VXLAN and KVM was encouraged by above Pablo Narváez's great article. Therefore Hats off to 
-Pablo who did a great job putting this article together making it everyone to create a LAB environment in virtual environments more 
-effective manner.
+Pablo who did a great job putting this article together making it possible to everyone to create a LAB environment in a virtual manner more 
+effectively.
 
 ![Topoloy diagram:](https://github.com/pmariyasinghe/NetAutomation/tree/master/vxlan-fabric-netwokdiagram.png)
+
+<p align="center">
+    <img src="vxlan-fabric-netwokdiagram.png" width="480"\>
+</p>
 
 For this lab, I created a self-contained virtual environment with CentOS Linux/KVM, vagrant and Arista virtual EOS (vEOS). 
 Here I’m trying to address all of the technically challenges when a network needs to be built programmatically. I think building 
