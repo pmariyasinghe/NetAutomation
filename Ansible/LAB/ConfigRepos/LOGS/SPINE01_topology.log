@@ -3921,3 +3921,219 @@ I'm connected to Neighbor LEAF03.LAB.AUTO.ME port Ethernet4 ---> Topology Valida
 
 
 
+############################ Show LLDP Neighbors #############################
+Date and Time : 01/24/19 23:50:53
+Checked by : admin
+
+
+Executing Show LLDP command on: SPINE01 
+[]
+
+
+
+
+############################ Show LLDP Neighbors #############################
+Date and Time : 01/27/19 20:02:30
+Checked by : admin
+
+
+Executing Show LLDP command on: SPINE01 
+############################ Show LLDP Neighbors #############################
+Date and Time : 01/27/19 20:04:21
+Checked by : admin
+
+
+Executing Show LLDP command on: SPINE01 
+[{u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}, {u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}, {u'neighborDevice': u'SPINE02.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}, {u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}]
+
+
+
+
+############################ Show LLDP Neighbors #############################
+Date and Time : 01/27/19 20:19:37
+Checked by : admin
+
+
+Executing Show LLDP command on: SPINE01 
+[{u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}, {u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}, {u'neighborDevice': u'SPINE02.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}, {u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}]
+[{u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet1', u'validation': u'none'}, {u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet2', u'validation': u'none'}, {u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet3', u'validation': u'none'}]
+
+
+
+
+############################ Show LLDP Neighbors #############################
+Date and Time : 01/27/19 21:04:29
+Checked by : admin
+
+
+Executing Show LLDP command on: SPINE01 
+[{u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}, {u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}, {u'neighborDevice': u'SPINE02.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}, {u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}]
+[{u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet1', u'validation': u'none'}, {u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet2', u'validation': u'none'}, {u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet3', u'validation': u'none'}]
+[{u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet1', u'validation': u'none'}, {u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet2', u'validation': u'none'}, {u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet3', u'validation': u'none'}]
+
+
+
+
+############################ Show LLDP Neighbors #############################
+Date and Time : 01/27/19 21:06:11
+Checked by : admin
+
+
+Executing Show LLDP command on: SPINE01 
+[{u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet1', u'validation': u'none'}, {u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet2', u'validation': u'none'}, {u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet3', u'validation': u'none'}]
+[{u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet1', u'validation': u'none'}, {u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet2', u'validation': u'none'}, {u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet3', u'validation': u'none'}]
+
+
+
+
+############################ Show LLDP Neighbors #############################
+Date and Time : 01/27/19 21:15:59
+Checked by : admin
+
+
+Executing Show LLDP command on: SPINE01 
+[{u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet1', u'validation': u'none'}, {u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet2', u'validation': u'none'}, {u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet3', u'validation': u'none'}]
+
+
+
+
+############################ Show LLDP Neighbors #############################
+Date and Time : 01/27/19 21:22:10
+Checked by : admin
+
+
+Executing Show LLDP command on: SPINE01 
+[{u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet1', u'validation': u'none'}, {u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet2', u'validation': u'none'}, {u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet3', u'validation': u'none'}]
+{u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet1', u'validation': u'none'}
+{u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet2', u'validation': u'none'}
+{u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet3', u'validation': u'none'}
+
+
+
+
+############################ Show LLDP Neighbors #############################
+Date and Time : 01/27/19 21:25:40
+Checked by : admin
+
+
+Executing Show LLDP command on: SPINE01 
+[{u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet1', u'validation': u'none'}, {u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet2', u'validation': u'none'}, {u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Ethernet4', u'port': u'Ethernet3', u'validation': u'none'}]
+{u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}
+{u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}
+{u'neighborDevice': u'SPINE02.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}
+{u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}
+{u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}
+{u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}
+{u'neighborDevice': u'SPINE02.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}
+{u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}
+{u'neighborDevice': u'LEAF02.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}
+{u'neighborDevice': u'LEAF03.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}
+{u'neighborDevice': u'SPINE02.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}
+{u'neighborDevice': u'LEAF01.LAB.AUTO.ME', u'neighborPort': u'Management1', u'port': u'Management1', u'ttl': 120}
+
+
+
+
+############################ Show LLDP Neighbors #############################
+Date and Time : 01/27/19 21:58:29
+Checked by : admin
+
+
+Executing Show LLDP command on: SPINE01 
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+
+
+
+
+############################ Show LLDP Neighbors #############################
+Date and Time : 01/27/19 22:05:34
+Checked by : admin
+
+
+Executing Show LLDP command on: SPINE01 
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+Management1
+
+
+
+
+############################ Show LLDP Neighbors #############################
+Date and Time : 01/27/19 22:18:41
+Checked by : admin
+
+
+Executing Show LLDP command on: SPINE01 
+Ethernet1
+Neighbor LEAF01.LAB.AUTO.ME is connected to Ethernet1 ---> Topology Validation = PASS
+I'm connected to Neighbor LEAF01.LAB.AUTO.ME port Ethernet4 ---> Topology Validation = PASS
+
+Ethernet2
+Ethernet3
+Management1
+Management1
+Management1
+Management1
+Ethernet1
+Ethernet2
+Neighbor LEAF02.LAB.AUTO.ME is connected to Ethernet2 ---> Topology Validation = PASS
+I'm connected to Neighbor LEAF02.LAB.AUTO.ME port Ethernet4 ---> Topology Validation = PASS
+
+Ethernet3
+Management1
+Management1
+Management1
+Management1
+Ethernet1
+Ethernet2
+Ethernet3
+Neighbor LEAF03.LAB.AUTO.ME is connected to Ethernet3 ---> Topology Validation = PASS
+I'm connected to Neighbor LEAF03.LAB.AUTO.ME port Ethernet4 ---> Topology Validation = PASS
+
+Management1
+Management1
+Management1
+Management1
+
+
+
+
+############################ Show LLDP Neighbors #############################
+Date and Time : 01/27/19 22:22:58
+Checked by : admin
+
+
+Executing Show LLDP command on: SPINE01 
+Neighbor LEAF01.LAB.AUTO.ME is connected to Ethernet1 ---> Topology Validation = PASS
+I'm connected to Neighbor LEAF01.LAB.AUTO.ME port Ethernet4 ---> Topology Validation = PASS
+
+Neighbor LEAF02.LAB.AUTO.ME is connected to Ethernet2 ---> Topology Validation = PASS
+I'm connected to Neighbor LEAF02.LAB.AUTO.ME port Ethernet4 ---> Topology Validation = PASS
+
+Neighbor LEAF03.LAB.AUTO.ME is connected to Ethernet3 ---> Topology Validation = PASS
+I'm connected to Neighbor LEAF03.LAB.AUTO.ME port Ethernet4 ---> Topology Validation = PASS
+
+
+
+
+

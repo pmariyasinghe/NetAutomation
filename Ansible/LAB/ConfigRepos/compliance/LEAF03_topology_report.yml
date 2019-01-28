@@ -7,5 +7,5 @@ topology:
  - NeighborDevice: SPINE02.LAB.AUTO.ME
    Localport: "Ethernet5"
    NeighborPort: "Ethernet3"
-   Validation: "PASS"
+   Validation: "none"
 #END Topology compliance report for LEAF03
