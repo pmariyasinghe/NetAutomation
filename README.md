@@ -31,21 +31,24 @@ This Network automation lab contains a number of playbooks which represent the f
 
 ## Table of Contents
 * [Zero touch provisioning](*ZTP)
- 
-  + Generate config templates for SPINE and LEAF switches based on initial attributes define in host file.
-  + Push the configuration templates to the TFTP server.
-  + Update DHCP config entries for each network host using its Management interface’s MAC address with and restart DHCP server.
-  + The network host in its initial boot downloads a python script from the TFTP server to and execute the given instructions in the script. 
-    This script checks it’s system MAC address and download the relevant configuration template to the host including the correct firmware. 
 	
 * [Validate LLDP neighbours](*validation)
 
 * [Build topology](*topology)
 
 
-## ZTP
+## Zero Touch Provisioning
 The actual automation of the building process is known as Zero Touch Provisioning (ZTP). Most major networking vendors have some 
 form of ZTP support, and the process is pretty simple. There are a few specific configurations needed on the ZTP server to make 
 everything work.
 
+  + Generate config templates for SPINE and LEAF switches based on initial attributes define in host file.
+  + Push the configuration templates to the TFTP server.
+  + Update DHCP config entries for each network host using its Management interface’s MAC address with and restart DHCP server.
+  + The network host in its initial boot downloads a python script from the TFTP server to and execute the given instructions in the script.
+    This script checks it’s system MAC address and download the relevant configuration template to the host including the correct firmware.
+
+## Validate LLDP neighbours
+
+## Build topology 
 - 
