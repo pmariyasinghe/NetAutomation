@@ -8,6 +8,9 @@ Whole idea behind designing a lab using vEOS, VXLAN and KVM was encouraged by ab
 Pablo who did a great job putting this article together making it everyone to create a LAB environment in virtual environments more 
 effective manner.
 
+Topoloy diagram:
+![alt text](https://raw.github.com/pmariyasinghe/NetAutomation/vxlan-fabric-netwokdiagram.png)
+
 For this lab, I created a self-contained virtual environment with CentOS Linux/KVM, vagrant and Arista virtual EOS (vEOS). 
 Here I’m trying to address all of the technically challenges when a network needs to be built programmatically. I think building 
 a network from the ground up level programmatically is important as much as maintaining it programmatically. Python is the 
