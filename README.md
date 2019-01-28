@@ -11,7 +11,7 @@ effective manner.
 Topoloy diagram:
 ![alt text](https://github.com/pmariyasinghe/NetAutomation/tree/master/vxlan-fabric-netwokdiagram.png?raw=true)
 
-../blob/master/myimage.png?raw=true
+![Image of Yaktocat](https://github.com/pmariyasinghe/NetAutomation/tree/master/vxlan-fabric-netwokdiagram.png)
 
 For this lab, I created a self-contained virtual environment with CentOS Linux/KVM, vagrant and Arista virtual EOS (vEOS). 
 Here I’m trying to address all of the technically challenges when a network needs to be built programmatically. I think building 
