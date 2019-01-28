@@ -10,7 +10,7 @@ complex networking concepts in a virtual manner.
 
 
 <p align="center">
-    <img src="vxlan-fabric-netwokdiagram.bmp" width="480"\>
+    <img src="vxlan-fabric-netwokdiagram.png" width="480"\>
 </p>
 
 For this lab, I created a self-contained virtual environment with CentOS Linux/KVM, vagrant and Arista virtual EOS (vEOS). 
