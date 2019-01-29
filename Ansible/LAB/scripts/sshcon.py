@@ -4,8 +4,9 @@
 # Date: Dec 30  2016
 # Author: Priyan Ariyasinghe
 # Date: Dec 30  2016
-# Description: This script can be used as import libraryi, making SSH2 connections using Paramiko,
-#              allows network-admins to login to network devices programmatically and execute of commands.
+# Description: This script can be used as import library to  make SSH2 connections using Paramiko library,
+#              to allow network-admins to login to network devices programmatically and execute network commands
+#              such as show and privilege commands.
 # Supported devices: Linux, Arista, Brocade, Cisco and Fortinet
 
 import paramiko
