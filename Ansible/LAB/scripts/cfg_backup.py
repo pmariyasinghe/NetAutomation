@@ -10,7 +10,7 @@ if __name__ == "__main__":
  
     ssh = SSHClient()
     ssh.load_system_host_keys()
-    ssh.connect('monitora', port=22, username="sypa", password="Ahung4ll4?")
+    ssh.connect('monitora', port=22, username="", password="")
  
     # SCPCLient takes a paramiko transport as its only argument
     # Just a no-op. Required sanitize function to allow wildcards.

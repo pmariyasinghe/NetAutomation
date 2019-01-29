@@ -4,8 +4,6 @@ import time
 from SCPConnection import SCPConnection
  
 port = 22
-#password = 'D%sec9an'
-#password = 'wcranhe'
 
 dfile = sys.argv[2].upper() + ".conf"
 base_dir = "/home/ADSERV/ansible/ansible/CFG/HPN/REPOS/LAB/"
