@@ -1,5 +1,13 @@
 #!/usr/bin/env pythdon
 
+# Author: Priyan Ariyasinghe
+# Date: Dec 30  2016
+# Author: Priyan Ariyasinghe
+# Date: Dec 30  2016
+# Description: This script can be used as import libraryi, making SSH2 connections using Paramiko,
+#              allows network-admins to login to network devices programmatically and execute of commands.
+# Supported devices: Linux, Arista, Brocade, Cisco and Fortinet
+
 import paramiko
 import time
 import socket
