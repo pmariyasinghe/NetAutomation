@@ -4836,3 +4836,117 @@ I'm connected to Neighbor LEAF02.LAB.AUTO.ME port Ethernet7 ---> Topology Valida
 
 
 
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/05/19 23:03:20
+Checked by : admin
+
+
+Connecting... LEAF02
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/05/19 23:08:47
+Checked by : admin
+
+
+Connecting... LEAF02
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/05/19 23:38:26
+Checked by : admin
+
+
+Connecting... LEAF02
+<ServerProxy for admin:admin@LEAF02/command-api>
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/05/19 23:49:54
+Checked by : admin
+
+
+Connecting... LEAF02
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/05/19 23:52:04
+Checked by : admin
+
+
+{u'jsonrpc': u'2.0', u'result': [{u'hostname': u'LEAF01', u'fqdn': u'LEAF01.LAB.AUTO.ME'}], u'id': u'140195284901584'}
+Connecting... LEAF02
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/05/19 23:53:28
+Checked by : admin
+
+
+{u'jsonrpc': u'2.0', u'result': [{u'hostname': u'LEAF01', u'fqdn': u'LEAF01.LAB.AUTO.ME'}], u'id': u'140080931736848'}
+Connecting... LEAF02
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/05/19 23:54:03
+Checked by : admin
+
+
+{u'jsonrpc': u'2.0', u'result': [{u'hostname': u'LEAF01', u'fqdn': u'LEAF01.LAB.AUTO.ME'}], u'id': u'139623306767632'}
+Connecting... LEAF02
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/06/19 00:02:38
+Checked by : admin
+
+
+{u'jsonrpc': u'2.0', u'result': [{u'hostname': u'LEAF01', u'fqdn': u'LEAF01.LAB.AUTO.ME'}], u'id': u'140273059691792'}
+Connecting... LEAF02
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/06/19 00:03:27
+Checked by : admin
+
+
+{u'jsonrpc': u'2.0', u'result': [{u'hostname': u'LEAF01', u'fqdn': u'LEAF01.LAB.AUTO.ME'}], u'id': u'140009339346192'}
+Connecting... LEAF02
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/06/19 00:04:03
+Checked by : admin
+
+
+{u'jsonrpc': u'2.0', u'result': [{u'hostname': u'LEAF01', u'fqdn': u'LEAF01.LAB.AUTO.ME'}], u'id': u'139758364278032'}
+LEAF02
+Connecting... LEAF02
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/06/19 00:04:59
+Checked by : admin
+
+
+{u'jsonrpc': u'2.0', u'result': [{u'hostname': u'LEAF01', u'fqdn': u'LEAF01.LAB.AUTO.ME'}], u'id': u'140700259171600'}
+LEAF02
+Connecting... LEAF02
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/06/19 00:09:57
+Checked by : admin
+
+
+{u'jsonrpc': u'2.0', u'result': [{u'hostname': u'LEAF01', u'fqdn': u'LEAF01.LAB.AUTO.ME'}], u'id': u'140144267406544'}
+LEAF02
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/06/19 00:11:10
+Checked by : admin
+
+
+{u'jsonrpc': u'2.0', u'result': [{u'hostname': u'LEAF01', u'fqdn': u'LEAF01.LAB.AUTO.ME'}], u'id': u'139862083894736'}
+LEAF02
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/06/19 00:23:07
+Checked by : admin
+
+
+{u'jsonrpc': u'2.0', u'result': [{u'hostname': u'LEAF01', u'fqdn': u'LEAF01.LAB.AUTO.ME'}], u'id': u'140709882687120'}
+LEAF02
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/06/19 00:35:53
+Checked by : admin
+
+
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/06/19 00:36:36
+Checked by : admin
+
+
+{u'jsonrpc': u'2.0', u'result': [{u'memTotal': 1893472, u'version': u'4.17.8M', u'internalVersion': u'4.17.8M-6296892.4178M', u'serialNumber': u'', u'systemMacAddress': u'52:54:00:b2:09:f0', u'bootupTimestamp': 1540816592.16, u'memFree': 386396, u'modelName': u'vEOS', u'architecture': u'i386', u'isIntlVersion': False, u'internalBuildId': u'78e499b8-3c2c-42b7-bc9d-7a6f1bd90a6d', u'hardwareRevision': u''}], u'id': u'140611963673808'}
+############################ Show LLDP Neighbors #############################
+Date and Time : 02/06/19 00:38:02
+Checked by : admin
+
+
+{u'jsonrpc': u'2.0', u'result': [{u'hostname': u'LEAF01', u'fqdn': u'LEAF01.LAB.AUTO.ME'}], u'id': u'140426098736784'}
