@@ -4,7 +4,7 @@ Please note my lab is pretty much similar to LAB topolgy used in the link below.
 
 https://the-bitmask.com/2017/07/11/arista-veos-l3slv-part1/
 
-The above article which actually inspired me to design a lab using vEOS, VXLAN and KVM. Therefore Hats off to 
+The above article which actually motivated me to design a experimental lab using vEOS, VXLAN and KVM. Therefore Hats off to 
 Pablo Narváez's who did a great job putting this article together making it possible for someone like me to exeriment
 complex networking concepts in virtual environments.
 
