@@ -1,11 +1,11 @@
 ## Network Automation lab
 
-Please note my lab is pretty much similar to LAB topolgy used in the following link.
+Please note my lab is pretty much similar to LAB topolgy used in the link below.
 
 https://the-bitmask.com/2017/07/11/arista-veos-l3slv-part1/
 
-Whole idea behind designing a lab, using vEOS, VXLAN and KVM, was encouraged by above article. Therefore Hats off to 
-Pablo Narváez's  who did a great job putting this article together making it possible to someone like me to exeriment
+The above article which actually inspired me to design a lab using vEOS, VXLAN and KVM. Therefore Hats off to 
+Pablo Narváez's who did a great job putting this article together making it possible for someone like me to exeriment
 complex networking concepts in virtual environments.
 
 
