@@ -4,8 +4,8 @@ Please note my lab is pretty much similar to LAB topolgy used in the link below.
 
 https://the-bitmask.com/2017/07/11/arista-veos-l3slv-part1/
 
-The above article which actually motivated me to design a experimental lab using vEOS, VXLAN and KVM. Therefore Hats off to 
-Pablo Narváez's who did a great job putting this article together making it possible for someone like me to exeriment
+The above article which actually motivated me to design an experimental lab using vEOS, VXLAN and KVM. Therefore Hats off to 
+Pablo Narváez's who did a great job putting this article together making it possible for someone like me to experiment
 complex networking concepts in virtual environments.
 
 
@@ -13,13 +13,13 @@ complex networking concepts in virtual environments.
     <img src="vxlan-fabric-netwokdiagram.png" width="480"\>
 </p>
 
-For this lab, I created a self-contained virtual environment with CentOS Linux/KVM, vagrant and Arista virtual EOS (vEOS). 
-Here I’m trying to address all of the technically challenges potentially we may experience when a network is deployed 
-and built programmatically. I think building a network from the ground-up level programmatically is important as much as 
-maintaining it programmatically. Thefore I spent considerable amount time on how to get the network built fast way with
-a little human touch. Python is the programming language which I used as my base scripting and although I didn’t have much 
-experience with Python and spent lot of time on Python coding and managed to suss out most of concepts including object 
-oriented programming. 
+For this lab, I created a self-contained virtual environment with CentOS Linux/KVM, vagrant, and Arista virtual EOS (vEOS). 
+Here I’m trying to address all of the technical challenges potentially we may experience when a network is deployed and built 
+programmatically. I think when building a network from the ground-up level programmatically is as important as maintaining 
+and sustaining it programmatically. Therefore I spent a considerable amount of time on how to get the network built fast way 
+with a little human touch. Python is the programming language that I used as my base scripting and although I didn’t have much 
+experience with Python and spent a lot of time on Python coding and managed to suss out most of the concepts including 
+object-oriented programming. 
 
 virtual hosts used in my lab:
 - Ansible host: vagrant-ubuntu-trusty-64
