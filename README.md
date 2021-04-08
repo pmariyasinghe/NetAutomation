@@ -15,8 +15,8 @@ complex networking concepts in virtual environments.
 
 For this lab, I created a self-contained virtual environment with CentOS Linux/KVM, vagrant, and Arista virtual EOS (vEOS). 
 Here I’m trying to address all of the technical challenges potentially we may experience when a network is deployed and built 
-programmatically. I think when building a network from the ground-up level programmatically is as important as maintaining 
-and sustaining it programmatically. Therefore I spent a considerable amount of time on how to get the network built fast way 
+programmatically. I think when building a network from the ground-up level programmatically is equally important as much as maintaining 
+and sustaining it programmatically. Therefore I spent a considerable amount of time on how to get the network built quickiest way 
 with a little human touch. Python is the programming language that I used as my base scripting and although I didn’t have much 
 experience with Python and spent a lot of time on Python coding and managed to suss out most of the concepts including 
 object-oriented programming. 
